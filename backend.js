@@ -25,9 +25,9 @@ router.post('/update', function(req, res, next) {
   console.log(a, b , c, d, e);
 
 var con = mysql.createConnection({
-  host: "206.189.182.37",
+  host: "",
   user: "root",
-  password: "TattooPassword321!",
+  password: "",
   database: "deposits"
 });
 
@@ -53,9 +53,9 @@ router.post('/meeting', function(req, res, next) {
   console.log(a, b , c, d, e);
 
 var con = mysql.createConnection({
-  host: "206.189.182.37",
+  host: "",
   user: "root",
-  password: "TattooPassword321!",
+  password: "!",
   database: "deposits"
 });
 
@@ -79,9 +79,9 @@ router.post('/total', function(req, res, next) {
 if(b!=0){
 
 var con = mysql.createConnection({
-  host: "206.189.182.37",
+  host: "",
   user: "root",
-  password: "TattooPassword321!",
+  password: "",
   database: "deposits"
 });
 
@@ -100,9 +100,9 @@ res.json({'test' :result});
 }
 else{
   var con = mysql.createConnection({
-    host: "206.189.182.37",
+    host: "",
     user: "root",
-    password: "TattooPassword321!",
+    password: "",
     database: "deposits"
   });
 
@@ -125,9 +125,9 @@ router.post('/delete', function(req, res, next) {
   let a = req.body.email;
 
   var con = mysql.createConnection({
-    host: "206.189.182.37",
+    host: "",
     user: "root",
-    password: "TattooPassword321!",
+    password: "",
     database: "deposits"
   });
 
@@ -152,9 +152,9 @@ router.post('/checkout', function(req, res, next) {
   console.log(a);
 
 var con = mysql.createConnection({
-  host: "206.189.182.37",
+  host: "",
   user: "root",
-  password: "TattooPassword321!",
+  password: "",
   database: "deposits"
 });
 
@@ -173,9 +173,9 @@ con.connect(function(err) {
 });
 router.get('/checkout', function(req, res, next) {
   var con = mysql.createConnection({
-    host: "206.189.182.37",
+    host: "",
     user: "root",
-    password: "TattooPassword321!",
+    password: "",
     database: "deposits"
 });
 
